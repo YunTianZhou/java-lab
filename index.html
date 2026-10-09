@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn Java one small experiment at a time. Interactive beginner lessons, practice, and creative mini projects."
+    />
+    <title>Java Lab</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23cdf66b'/%3E%3Ctext x='7' y='29' font-family='monospace' font-weight='bold' font-size='27'%3EJ;%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a href="#home" class="brand"
+        ><span class="brand-mark">J<span>;</span></span
+        >java<span class="brand-light">lab</span><span class="brand-dot"></span
+      ></a>
+      <div class="sidebar-label">YOUR WORKSPACE</div>
+      <a class="nav-link" id="home-link" href="#home"><span>⌂</span> Course overview</a>
+      <div class="sidebar-label course-label">THE JAVA PATH <span>03 / 03</span></div>
+      <a class="nav-link" id="unit-link" href="#lesson/0"
+        ><span class="unit-num">01</span> The fundamentals</a
+      >
+      <div id="lesson-nav"></div>
+      <a class="nav-link" id="unit2-link" href="#unit/2/lesson/0"><span class="unit-num">02</span> Making decisions</a>
+      <a class="nav-link" id="unit3-link" href="#unit/3/lesson/0"><span class="unit-num">03</span> On repeat</a>
+      <div class="sidebar-bottom">
+        <span class="tiny-code">{ }</span><strong>Small steps. Build real skillsets.</strong>
+        <p>Consistency is key to success.</p>
+        <div class="sidebar-foot">JAVA FOR BEGINNERS</div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb">
+          Your learning path <span>/</span> <strong id="breadcrumb">Overview</strong>
+        </div>
+        <div class="top-right">
+          <span class="beginner-dot"></span> Beginner friendly <span class="avatar">YOU</span>
+        </div>
+      </header>
+      <main id="app"></main>
+      <footer><span class="footer-code">&lt;learn. build. repeat /&gt;</span></footer>
+    </div>
+    <script src="content/interface.js"></script>
+    <script src="content/home.js"></script>
+    <script src="interface-copy.js"></script>
+    <!-- Ordered scripts support opening index.html directly without a server. -->
+    <script src="content/unit-1/steps.js"></script>
+    <script src="content/unit-1/lessons.js"></script>
+    <script src="content/unit-1/quizzes.js"></script>
+    <script src="content/unit-1/examples.js"></script>
+    <script src="content/unit-1/builds/intro.js"></script>
+    <script src="content/unit-1/builds/money.js"></script>
+    <script src="content/unit-1/builds/pizza.js"></script>
+    <script src="content/unit-1/builds/robot.js"></script>
+    <script src="content/unit-1/builds/spaceport.js"></script>
+    <script src="content/unit-1/builds/story.js"></script>
+    <script src="content/unit-1/builds/swap.js"></script>
+    <script src="content/unit-1/index.js"></script>
+    <script src="content/unit-2/steps.js"></script>
+    <script src="content/unit-2/lessons.js"></script>
+    <script src="content/unit-2/quizzes.js"></script>
+    <script src="content/unit-2/builds/board.js"></script>
+    <script src="content/unit-2/builds/rps.js"></script>
+    <script src="content/unit-2/builds/twentyFour.js"></script>
+    <script src="content/unit-2/builds/tickets.js"></script>
+    <script src="content/unit-2/index.js"></script>
+    <script src="content/unit-3/steps.js"></script>
+    <script src="content/unit-3/lessons.js"></script>
+    <script src="content/unit-3/quizzes.js"></script>
+    <script src="content/unit-3/builds/guess.js"></script>
+    <script src="content/unit-3/builds/digits.js"></script>
+    <script src="content/unit-3/builds/cheater.js"></script>
+    <script src="content/unit-3/builds/target.js"></script>
+    <script src="content/unit-3/builds/duel.js"></script>
+    <script src="content/unit-3/index.js"></script>
+    <script src="js/course.js"></script>
+    <script src="js/unit2-behavior.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/build.js"></script>
+    <script src="js/condition-playgrounds.js"></script>
+    <script src="js/loop-playgrounds.js"></script>
+    <script src="js/unit3-builds.js"></script>
+    <script src="js/lesson.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
