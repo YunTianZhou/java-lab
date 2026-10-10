@@ -4,11 +4,12 @@ const UNIT_3_BUILD_DUEL = {
     "Build one complete charge-and-shield duel against the computer, with an option to replay.",
   tasks: [
     "Both sides start with <strong>3 HP and 0 ammunition</strong>. Each valid turn, both choose an action before either action is resolved.",
-    "<code>+</code> charges one ammunition; <code>-</code> fires one; <code>=</code> fires two; <code>|</code> shields a single shot; <code>#</code> shields a double shot.",
+    "In each turn, both sides choose an action: <code>+</code> charges one ammunition; <code>-</code> fires one; <code>=</code> fires two; <code>|</code> shields a single shot; <code>#</code> shields a double shot.",
     "Shots require enough ammunition and spend it even if blocked. Equal shots cancel; double shot beats single shot. An unblocked shot deals <strong>one damage</strong>. Shields only block their matching shot.",
     "The computer randomly chooses among its legal actions without inspecting the player’s current choice. Charge and both shields are always legal.",
     "Reject unknown or unaffordable actions without changing state or advancing the turn. Accept <code>quit</code> to leave the duel.",
-    "Show actions, HP, ammunition, and the winner when HP reaches zero. Ask <code>yes/no</code> to replay; a replay resets everything.",
+    "Show HP, and ammunition at the begining of each turn. Reveal actions of both sides at the end of each turn.",
+	"Display winner when HP reaches zero. Ask <code>yes/no</code> to replay; a replay resets everything.",
   ],
   hints: [
     "Validate first, then choose the opponent’s action and update state. Invalid input should never reach those updates.",
